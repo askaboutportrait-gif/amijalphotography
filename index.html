@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amijal Photography</title>
+    <meta
+      name="description"
+      content="Amijal Photography captures portraits, weddings, events, and brand stories with warm editorial style."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#portfolio">Skip to portfolio</a>
+
+    <header class="site-header" aria-label="Site header">
+      <a class="brand" href="#" aria-label="Amijal Photography home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>Amijal Photography</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"></path>
+        </svg>
+      </button>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Amijal Photography">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Portraits, weddings, events</p>
+          <h1>Amijal Photography</h1>
+          <p>
+            Warm, cinematic image-making for people, celebrations, and brands
+            that want their story to feel honest and beautifully kept.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#booking">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 7V3m8 4V3M5 11h14M6 5h12a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"></path>
+              </svg>
+              Book a session
+            </a>
+            <a class="button ghost" href="#portfolio">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 6.5h16v11H4Z"></path>
+                <path d="m7 15 3.3-3.3 2.2 2.2 2.1-2.6L18 15"></path>
+              </svg>
+              View work
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Studio highlights">
+        <div class="intro-grid">
+          <div>
+            <span class="stat-value">9+</span>
+            <span class="stat-label">Years behind the camera</span>
+          </div>
+          <div>
+            <span class="stat-value">480</span>
+            <span class="stat-label">Sessions delivered</span>
+          </div>
+          <div>
+            <span class="stat-value">24h</span>
+            <span class="stat-label">Preview turnaround</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio-band" id="portfolio" aria-labelledby="portfolioTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Selected stories</p>
+          <h2 id="portfolioTitle">Portfolio</h2>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filter portfolio">
+          <button class="filter-button active" type="button" data-filter="All">All</button>
+          <button class="filter-button" type="button" data-filter="Portraits">Portraits</button>
+          <button class="filter-button" type="button" data-filter="Weddings">Weddings</button>
+          <button class="filter-button" type="button" data-filter="Events">Events</button>
+          <button class="filter-button" type="button" data-filter="Brands">Brands</button>
+        </div>
+
+        <div class="gallery" id="gallery" aria-live="polite"></div>
+      </section>
+
+      <section class="services-band" id="services" aria-labelledby="servicesTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Session styles</p>
+          <h2 id="servicesTitle">Services</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=900&q=85"
+              alt="Editorial portrait in soft natural light"
+            >
+            <div>
+              <h3>Portrait Sessions</h3>
+              <p>Personal branding, family portraits, graduation, maternity, and studio looks.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85"
+              alt="Wedding couple outdoors"
+            >
+            <div>
+              <h3>Wedding Stories</h3>
+              <p>Full-day coverage, intimate ceremonies, engagement shoots, and highlight edits.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <img
+              src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=85"
+              alt="Concert and event crowd"
+            >
+            <div>
+              <h3>Events & Brands</h3>
+              <p>Launches, corporate events, product stories, campaigns, and content libraries.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="booking-band" id="booking" aria-labelledby="bookingTitle">
+        <div class="booking-layout">
+          <div class="section-heading">
+            <p class="eyebrow">Now booking</p>
+            <h2 id="bookingTitle">Tell the story with care.</h2>
+          </div>
+
+          <form class="booking-form" aria-label="Booking enquiry">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" autocomplete="name" placeholder="Your name">
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+            </label>
+            <label>
+              <span>Session</span>
+              <select name="session">
+                <option>Portrait session</option>
+                <option>Wedding coverage</option>
+                <option>Event photography</option>
+                <option>Brand story</option>
+              </select>
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Date, location, and what you are imagining"></textarea>
+            </label>
+            <button class="button primary" type="submit">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m4 12 15-7-7 15-2-6Z"></path>
+              </svg>
+              Send enquiry
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Amijal Photography</span>
+      <span>hello@amijalphotography.com</span>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Portfolio image preview">
+      <button class="close-button" type="button" aria-label="Close preview">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6l12 12M18 6 6 18"></path>
+        </svg>
+      </button>
+      <img alt="">
+      <div>
+        <h3></h3>
+        <p></p>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
