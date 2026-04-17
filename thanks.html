@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thank You | Amijal Photography</title>
+    <meta name="description" content="Thank you for contacting Amijal Photography.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        background:
+          linear-gradient(90deg, rgba(12, 12, 10, 0.72), rgba(12, 12, 10, 0.3)),
+          url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=86")
+            center / cover;
+        color: #fffaf3;
+      }
+
+      .thanks-layout {
+        display: grid;
+        min-height: 100svh;
+        padding: clamp(1rem, 4vw, 2.6rem);
+        place-items: center start;
+      }
+
+      .thanks-card {
+        width: min(41rem, 100%);
+      }
+
+      .thanks-brand {
+        margin-bottom: 3rem;
+      }
+
+      .thanks-card h1 {
+        max-width: none;
+      }
+
+      .thanks-card p:not(.eyebrow) {
+        max-width: 34rem;
+        color: rgba(255, 250, 243, 0.86);
+        font-size: 1.08rem;
+        margin: 1rem 0 1.6rem;
+      }
+    </style>
+  </head>
+  <body class="thanks-page">
+    <main class="thanks-layout">
+      <section class="thanks-card" aria-labelledby="thanksTitle">
+        <a class="brand thanks-brand" href="index.html" aria-label="Amijal Photography home">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>Amijal Photography</span>
+        </a>
+        <p class="eyebrow">Enquiry received</p>
+        <h1 id="thanksTitle">Thank you.</h1>
+        <p>
+          Your message has been sent to Amijal Photography. We will reply soon
+          with availability, next steps, and any questions about your session.
+        </p>
+        <a class="button primary" href="index.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M19 12H5m6-6-6 6 6 6"></path>
+          </svg>
+          Back to home
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
