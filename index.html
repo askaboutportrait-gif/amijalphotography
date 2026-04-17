@@ -141,18 +141,47 @@
             <h2 id="bookingTitle">Tell the story with care.</h2>
           </div>
 
-          <form class="booking-form" aria-label="Booking enquiry">
+          <form
+            class="booking-form"
+            action="https://formsubmit.co/askaboutportrait@gmail.com"
+            method="POST"
+            aria-label="Booking enquiry"
+          >
+            <input type="hidden" name="_subject" value="New Amijal Photography enquiry">
+            <input type="hidden" name="_template" value="table">
+            <input
+              type="hidden"
+              name="_next"
+              value="https://askaboutportrait-gif.github.io/amijalphotography/thanks.html"
+            >
+            <input
+              class="honey-field"
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+              style="position:absolute;left:-100vw;width:1px;height:1px;opacity:0"
+            >
             <label>
               <span>Name</span>
-              <input type="text" name="name" autocomplete="name" placeholder="Your name">
+              <input type="text" name="name" autocomplete="name" placeholder="Your name" required>
             </label>
             <label>
               <span>Email</span>
-              <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              <span>Phone or WhatsApp</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+91 98765 43210">
+            </label>
+            <label>
+              <span>Preferred date</span>
+              <input type="date" name="preferred_date">
             </label>
             <label>
               <span>Session</span>
-              <select name="session">
+              <select name="session" required>
                 <option>Portrait session</option>
                 <option>Wedding coverage</option>
                 <option>Event photography</option>
@@ -161,7 +190,12 @@
             </label>
             <label>
               <span>Message</span>
-              <textarea name="message" rows="5" placeholder="Date, location, and what you are imagining"></textarea>
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Location, timing, guest count, mood, or anything you are imagining"
+                required
+              ></textarea>
             </label>
             <button class="button primary" type="submit">
               <svg viewBox="0 0 24 24" aria-hidden="true">
