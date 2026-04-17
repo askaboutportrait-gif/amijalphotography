@@ -141,18 +141,17 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-bookingForm.addEventListener("submit", (event) => {
-  event.preventDefault();
+bookingForm.addEventListener("submit", () => {
+  if (!bookingForm.checkValidity()) return;
+
   const button = bookingForm.querySelector("button");
-  button.textContent = "Enquiry ready";
-  window.setTimeout(() => {
-    button.innerHTML = `
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="m4 12 15-7-7 15-2-6Z"></path>
-      </svg>
-      Send enquiry
-    `;
-  }, 1600);
+  button.disabled = true;
+  button.innerHTML = `
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 3v5m0 8v5m6.4-15.4-3.5 3.5m-5.8 5.8-3.5 3.5M21 12h-5M8 12H3m15.4 6.4-3.5-3.5M9.1 9.1 5.6 5.6"></path>
+    </svg>
+    Sending
+  `;
 });
 
 renderGallery();
